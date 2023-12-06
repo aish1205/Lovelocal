@@ -1,12 +1,16 @@
 # Lovelocal
 
 Easy 1: 
-The length_of_last_word function calculates the length of the last word in a given string s. Here's an explanation of how it works:
+The length_of_last_word function calculates the length of the last word in a given string s.
+Explanation of how it works:
 
 s.strip(): Removes leading and trailing whitespaces from the string s. This ensures that any spaces at the beginning or end of the string are ignored.
+
 split(): Splits the string into a list of words based on whitespace. This effectively breaks the string into words.
 [-1]: Selects the last element (word) from the list of words obtained after the split.
+
 len(...): Calculates the length of the last word.
+
 The function works by leveraging the strip and split methods to handle leading/trailing spaces and split the string into words. Then, it extracts the last word and calculates its length using len.
 
 Easy 3:
