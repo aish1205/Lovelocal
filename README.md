@@ -1,17 +1,13 @@
 # Lovelocal
 
 Easy 1: 
-The length_of_last_word function takes a string s as input and returns the length of the last word in the string. The function uses a simple loop to iterate through the characters of the string from right to left.
-The code is explained as follows:
-Set last_word_length to 0 at startup. The length of the previous word will be kept in this variable.
-With a step of -1, begin iterating through the characters in the string starting from the last character (len(s) - 1) and ending with the first character (-1).
+The length_of_last_word function calculates the length of the last word in a given string s. Here's an explanation of how it works:
 
-Verify whether the character being typed is a space (' '):
-The function returns the length of the last word if it is a space and last_word_length is greater than 0. This indicates that we have located the last word's end.
-
-We continue iterating if it is a space and last_word_length = 0, which indicates that we are still running into consecutive spaces at the end of the string.
-Increase last word length by 1 if the current character is not a space, signifying that we are still within the last word.
-If the loop completes without encountering a space, it means the entire string is a single word, and the function returns the length of that word.
+s.strip(): Removes leading and trailing whitespaces from the string s. This ensures that any spaces at the beginning or end of the string are ignored.
+split(): Splits the string into a list of words based on whitespace. This effectively breaks the string into words.
+[-1]: Selects the last element (word) from the list of words obtained after the split.
+len(...): Calculates the length of the last word.
+The function works by leveraging the strip and split methods to handle leading/trailing spaces and split the string into words. Then, it extracts the last word and calculates its length using len.
 
 Easy 3:
 The generate function takes an integer numRows as input and returns a list of lists representing the first numRows of Pascal's triangle. The function uses recursion to build the Pascal's triangle row by row.
